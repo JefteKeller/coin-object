@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text-color: rgb(202, 187, 50);
+  --main-margin-padding: 1rem;
+}
+
+html,
+body main {
+  font-size: 16px;
+  line-height: 2.5rem;
+  color: var(--main-text-color);
+  font-family: 'Rye', cursive;
+  background-image: url(./images/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: var(--main-margin-padding);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.192);
+
+}
+
+
+.resultTitle {
+  padding: 0.5rem;
+  border-top: 2px solid var(--main-text-color);
+  border-bottom: 2px solid var(--main-text-color);
+
+}
+
+.coinImg {
+  width: 30%;
+  margin: var(--main-margin-padding);
+}
+
+#result {
+  text-align: center;
+  padding: var(--main-margin-padding);
+  padding-top: 0;
+  background-image: inherit;
+  background-position: bottom;
+  background-size: initial;
+}
+
+body main section#result section#resultText p {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+
+  .coinImg {
+    width: 20%;
+    margin: var(--main-margin-padding);
+  }
+
+  .resultTitle {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 650px) {
+
+  header h1 {
+    padding: 2rem;
+  }
+
+  #resultImgBox {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .resultTitle {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .coinImg {
+    width: 10%;
+    margin: var(--main-margin-padding);
+  }
+
+  #result {
+    background-size: cover;
+    background-position: bottom;
+  }
+
+}
